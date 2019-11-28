@@ -3,14 +3,20 @@ package practice;
 import java.util.*;
 class ReverseString
 {
-  static String original;
-  String reverse;
+  int size;
+  String reverse=" ",original;
+  
+    public void newString() {
+    	Scanner in = new Scanner(System.in);
+        System.out.println("Enter a string to reverse");
+        original = in.nextLine();
+        size = original.length();
+        in.close();
+    }
 	
 	public String reverse() {
 		
-		int length = original.length();
-
-	    for (int i = length - 1 ; i >= 0 ; i--)
+	for (int i = size - 1 ; i >= 0 ; i--)
 	      reverse = reverse + original.charAt(i);
 	      return reverse;
 	}
@@ -18,11 +24,8 @@ class ReverseString
 	public static void main(String args[])
   {
        ReverseString rev = new ReverseString();
-       Scanner in = new Scanner(System.in);
-       System.out.println("Enter a string to reverse");
-       original = in.nextLine();
-       String result = rev.reverse();
-       System.out.println("Reverse of the string: " + result);
-       in.close();
+       rev.newString();
+       
+       System.out.println("Reverse of the string: " + rev.reverse());
   }
 }
