@@ -9,3 +9,8 @@ dipti
 teja
 subash
 sumit
+
+java
+core 
+python
+selenium
