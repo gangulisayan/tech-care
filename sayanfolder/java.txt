@@ -1,5 +1,0 @@
-javatext
-array
-collection
-text
-string
