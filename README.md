@@ -1,2 +1,0 @@
-# tech-care
-%temp file%
